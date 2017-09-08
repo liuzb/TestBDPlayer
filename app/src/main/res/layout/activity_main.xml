@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context="com.bob.testbdplayer.MainActivity">
+    <RelativeLayout
+        android:id="@+id/rl_normalscreen_controller"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <com.bob.testbdplayer.widget.BDCloudVideoView
+            android:id="@+id/bd_videoview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/view_holder"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_above="@id/rl_normalscreen_controller"
+        android:layout_centerInParent="true"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+    </RelativeLayout>
+
+</RelativeLayout>
